@@ -5,6 +5,6 @@ const { SignUpController, SignInController } = require("../controller");
 userRouter.route("/register").post(SignUpController);
 
 //user register route --> doamin/api/v/users/register
-userRouter.route("/login").get(SignInController);
+userRouter.route("/login").post(SignInController);
 
 module.exports = userRouter;
