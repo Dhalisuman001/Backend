@@ -13,7 +13,7 @@ const signup = expressAsyncHandler(async (req, res) => {
       password: req?.body?.password,
       email: req?.body?.email,
     });
-    res.json(user);
+    res.json({ email: user?.email, password: user?.password });
   } catch (error) {
     res.json(error);
     console.log(error);
