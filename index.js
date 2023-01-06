@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://login-register-mern-social.netlify.app/",
+    origin: "https://login-register-mern-social.netlify.app",
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
