@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require("passport");
 
-const CLIENT_URL = "http://login-register-mern-social.netlify.app/home";
+const CLIENT_URL = "http://login-register-mern-social.netlify.app/page";
 
 router.get("/login/success", (req, res) => {
   if (req.user) {
